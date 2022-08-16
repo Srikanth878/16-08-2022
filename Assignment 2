@@ -1,0 +1,30 @@
+#include<stdio.h>
+void main()
+{
+   int n,a[n],i,j,flag,prime[n],p;
+   scanf("%d",&n);
+   for(i=0;i<n;i++)
+  {
+   scanf("%d",&a[i]);
+  }
+  for(i=0;i<n;i++)
+  {
+   flag=0;
+   for(j=2;j<=n;j++)
+   {
+    if(a[i]%j==0)
+    {
+     flag=1;
+     break;
+    }
+   }
+  if(flag==0)
+  {
+   prime[p]=a[i];
+   p++;
+  }
+}
+printf("the prime elements are:\n");
+for(i=0;i<p;i++)
+printf("%d\n", prime[i]);
+}
