@@ -25,6 +25,6 @@ void main()
   }
 }
 printf("the prime elements are:\n");
-for(i=0;i<p;i++)
+for(i=p;i>=0;i--)
 printf("%d\n", prime[i]);
 }
